@@ -24,11 +24,16 @@ html {
 
 
 .circle {
-	position: absolute;
-  border: solid 1px #fff;
+    position: absolute;
+    border: solid 1px #fff;
 	width: 60px; 
-	height: 60px; 
-  border-radius: 50%;  
+    height: 60px; 
+    border-radius: 50%;  
+}
+
+a:hover > .circle {
+    width: 80px;
+    height: 80px;
 }
 
 img {
@@ -129,6 +134,12 @@ a.round-button {
 
     .circle {
         opacity: 0;
+    }
+
+    a.round-button {
+        border: solid 1px #fff;
+        padding: 10px 20px;
+        border-radius: 50%;
     }
    
   }
