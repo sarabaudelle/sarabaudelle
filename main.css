@@ -29,9 +29,10 @@ html {
 	width: 60px; 
     height: 60px; 
     border-radius: 50%;  
+    transition: all 300ms ease;
 }
 
-a:hover > .circle {
+.circle > a.hover {
     width: 80px;
     height: 80px;
 }
