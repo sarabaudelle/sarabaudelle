@@ -4,9 +4,9 @@
 
 body,
 html {
-	overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-y: hidden; /* Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
-	position: relative;
+    position: relative;
     width: 100%;
     height: 100%;
     padding: 0;
@@ -39,18 +39,17 @@ img {
 }
 
 p {
-    font-family: proxima-nova, sans-serif;
-	font-weight: 400;
-	font-style: normal;
+    font-family: questa-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 14px;
     margin-bottom: 0;
 }
 
 a {
-font-family: proxima-nova, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-    font-size: 14px;
+    font-family: questa-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #fff;
 }
 
