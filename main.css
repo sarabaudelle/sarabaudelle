@@ -4,6 +4,9 @@
 
 body,
 html {
+	overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+	position: relative;
     width: 100%;
     height: 100%;
     padding: 0;
