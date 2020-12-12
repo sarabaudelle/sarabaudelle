@@ -11,18 +11,18 @@ html {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: #CABEB2;
-    color: #333;
+    background-color: #F4F3ED;
+    color: #000;
 }
 
 ::-moz-selection { /* Code for Firefox */
     color: #000;
-    background: #fff;
+    background: #F4F3ED;
   }
   
   ::selection {
     color: #000;
-    background: #fff;
+    background: #F4F3ED;
   }
 
 
