@@ -4,34 +4,23 @@
 
 body,
 html {
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    position: relative;
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: #F4F3ED;
-    color: #000;
+    background-color: #0a0a0a;
+    color: #f2f2f9;
+    line-height: 1.6;
+    font-family: aktiv-grotesk, sans-serif;
 }
 
-::-moz-selection { /* Code for Firefox */
-    color: #000;
-    background: #F4F3ED;
-  }
-  
-  ::selection {
-    color: #000;
-    background: #F4F3ED;
-  }
+section {
+    transition: transform .25s;
+  will-change: transform;
+}
 
-
-.circle {
-    position: absolute;
-    border: solid 1px #333;
-	width: 60px; 
-    height: 60px; 
-    border-radius: 50%;  
+.with-border {
+    border-top: 1px solid #f2f2f9;
 }
 
 img {
@@ -39,22 +28,22 @@ img {
 }
 
 p {
-    font-family: questa-sans, sans-serif;
+    font-family: aktiv-grotesk, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 0;
 }
 
 a {
-    font-family: questa-sans, sans-serif;
+    font-family: aktiv-grotesk, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #333;
+    color: #f2f2f9;
 }
 
 a:hover {
-    color: #333;
+    color: #f2f2f9;
     text-decoration: none;
 }
 
@@ -68,68 +57,35 @@ ul {
 li {
     padding-right: 40px;
     list-style: none;
-    font-family: "Apercu", sans-serif;
+    font-family: aktiv-grotesk, sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
 }
 
-.underline-animation {
+.underline {
     display: inline-block;
-    color: #333;
+    color: #f2f2f9;
     text-decoration: none;
 }
 
-.underline-animation::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    background:#333;
-    transition: width .8s;
-}
-
-.underline-animation:hover::after {
-    width: 100%;
-    transition: width .3s;
-}
-
-.inverse-animation {
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-}
-
-.inverse-animation::after {
+.underline::after {
     content: '';
     display: block;
     width: 100%;
     height: 1px;
-    background: #333;
+    background: #f2f2f9;
     transition: width .8s;
 }
 
-.inverse-animation:hover::after {
+.underline:hover::after {
     width: 0;
     transition: width .3s;
 }
 
 @media only screen and (max-width: 600px) {
-    .underline-animation::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 1px;
-        background:#333;
-        transition: width .8s;
-    }
-
-    .inverse-animation:hover::after {
+    .underline:hover::after {
         width: 100%;
         transition: width .3s;
-    }
-
-    .circle {
-        opacity: 0;
     }
    
 }

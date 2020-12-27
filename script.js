@@ -1,17 +1,18 @@
-jQuery(document).ready(function() {
+const section = document.querySelector("section");
+let currentPixel = window.pageYOffset
 
-    var mouseX = 0, mouseY = 0;
-    var xp = 0, yp = 0;
-     
-    $(document).mousemove(function(e){
-      mouseX = e.pageX - 30;
-      mouseY = e.pageY - 30; 
-    });
-      
-    setInterval(function(){
-      xp += ((mouseX - xp)/6);
-      yp += ((mouseY - yp)/6);
-      $("#circle").css({left: xp +'px', top: yp +'px'});
-    }, 20);
+//looper keeps running and keeps track of where the new pixel is
+const looper = function () {
+  const newPixel = window.pageYOffset;
+  const diff = newPixel - currentPixel
+  const speed = diff * 0.35;
   
-  });
+  section.style.transform = "skewY(" + speed + "deg)"
+  
+  
+  currentPixel = newPixel;
+  
+  requestAnimationFrame(looper)
+}
+
+looper();
