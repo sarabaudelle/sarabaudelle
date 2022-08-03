@@ -49,6 +49,7 @@ a {
 
 a::after {
     content: " ↗";
+    font-size: 16px;
     text-decoration: none;
 }
 
