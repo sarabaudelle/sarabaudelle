@@ -2,7 +2,15 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@font-face {
+    font-family: Baudelle;
+    src: url(NeueHaasDisplayRoman.ttf);
+  }
+
+@font-face {
+    font-family: Sara;
+    src: url(NeueHaasDisplayRoman.ttf);
+}
 
 body,
 html {
@@ -10,73 +18,17 @@ html {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: #111;
-    color: #f2f2f2;
-    font-size: 18px;
-    line-height: 1.6;
-    font-family: 'Inter', sans-serif;
+    background-color: #fafafa;
+    color: #222;
+    font-family: Baudelle, sans-serif;
 }
-
-:-moz-selection {
-    color: #111;
-    background: #f2f2f2;
-  }
-  
-::selection {
-    color: #111;
-    background: #f2f2f2;
-  }
 
 h1 {
-    font-size: 48px;
-    text-transform: uppercase;
-    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
 }
 
-h2, h3 {
+h2, h3, h4, h5, p {
     font-size: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    margin-bottom: 0;
-}
-
-a {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #f2f2f2;
-}
-
-a::after {
-    content: " ↗";
-    font-size: 16px;
-    text-decoration: none;
-}
-
-@media only screen and (max-width: 800px) {
-    a::after {
-        font-size: 20px;
-    }
-  }
-a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    color: #f2f2f2;
-}
-
-a.hide-after::after {
-    display: none;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    line-height: 32px;
 }
